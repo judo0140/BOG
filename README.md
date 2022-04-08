@@ -57,4 +57,20 @@ nano ~/.bashrc
 ```
 source ~/.bashrc
 ```
+--------------
+# 3. 하드웨어 셋업
+--------------
+# 4. 실행
+## 4.1 ROS 및 노드 실행
 
+리니어 가이드의 컵 구동부는 테이블 사이드로 배치
+
+1) PC
+```
+roscore
+
+rosrun bog_table bog_master.py
+```
+2) 라즈베리파이1
+```
+rosrun bog_table bog_guide1.py
