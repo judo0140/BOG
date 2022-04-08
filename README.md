@@ -29,4 +29,7 @@ L8326 iptime 공유기 (ssid : bog_5g)의 경우
 ## 2.2 ROS ~/.bashrc 파일 수정
 1) PC
 터미널 실행 후
+
   nano ~/.bashrc
+
+ㅇㄹ
