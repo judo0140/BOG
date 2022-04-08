@@ -13,3 +13,6 @@ OpenCR 보드에 다이나믹셀 컨트롤을 위한 펌웨어 업로드 (OpenCR
 2) File -> Examples -> OpenCR -> 10.Etc -> usb_to_dxl 클릭
 3) 업로드
 
+--------------
+
+# 2. ROS 네트워크 설정
