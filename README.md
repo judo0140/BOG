@@ -1,3 +1,11 @@
+# 0. 부가 설명
+
+* BOG/scripts/bog_master.py -> PC의 ~/catkin_ws/src/bog_table/src 폴더로
+* BOG/scripts/bog_dynamixel.py -> 라즈베리파이1 의 ~/catkin_ws/src/bog_table/src 폴더로
+* BOG/scripts/bog_guide1.py -> 라즈베리파이1 의 ~/catkin_ws/src/bog_table/src 폴더로
+* BOG/scripts/bog_guide2.py -> 라즈베리파이2 의 ~/catkin_ws/src/bog_table/src 폴더로
+* BOG/scripts/bog_guide3.py -> 라즈베리파이3 의 ~/catkin_ws/src/bog_table/src
+
 # 1. 소프트웨어 셋업
 
 ## 1.1 Ubuntu 18.04 ROS melodic 설치
