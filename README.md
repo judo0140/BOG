@@ -81,4 +81,18 @@ rosrun bog_table bog_guide1.py
 rosrun bog_table bog_dynamixel.py
 # dynamixel 구동을 위한 노드
 ```
+3) 라즈베리파이2
+```
+rosrun bog_table bog_guide2.py
+```
+4) 라즈베리파이3
+```
+rosrun bog_table bog_guide3.py
+```
+
+## 4.2 조작
+
+컵, 다이나믹셀 위치 입력 후 실험 시나리오에 맞게 조작
+
+![Screenshot from 2022-04-08 18-11-13](https://user-images.githubusercontent.com/61779427/162404612-8f359e8c-8b80-4d11-80ca-3351a890ebfb.png)
 
