@@ -72,5 +72,13 @@ roscore
 rosrun bog_table bog_master.py
 ```
 2) 라즈베리파이1
+
+터미널 창을 2개 실행시켜 노드 2개를 실행시켜야 한다
 ```
 rosrun bog_table bog_guide1.py
+```
+```
+rosrun bog_table bog_dynamixel.py
+# dynamixel 구동을 위한 노드
+```
+
