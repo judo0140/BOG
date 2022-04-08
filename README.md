@@ -30,9 +30,9 @@ L8326 iptime 공유기 (ssid : bog_5g)의 경우
 1) PC
 
 터미널 실행 후
-
-  nano ~/.bashrc
-
+```
+nano ~/.bashrc
+```
 네트워크 설정 변경
 ![Screenshot from 2022-04-08 15-49-08](https://user-images.githubusercontent.com/61779427/162380194-f8f43f7e-526e-4d51-b5f8-51d39432f2d2.png)
 
