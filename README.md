@@ -27,7 +27,7 @@ L8326 iptime 공유기 (ssid : bog_5g)의 경우
 -라즈베리파이3 : 192.168.0.6
 
 ## 2.2 ROS ~/.bashrc 파일 수정
-1) PC
+PC
 터미널 실행 후
 '''
   nano ~/.bashrc
