@@ -13,6 +13,19 @@ OpenCR 보드에 다이나믹셀 컨트롤을 위한 펌웨어 업로드 (OpenCR
 2) File -> Examples -> OpenCR -> 10.Etc -> usb_to_dxl 클릭
 3) 업로드
 
+## 1.4 다이나믹셀 구동을 위한 Dynamixel SDK 패키지 설치
+참고 : https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/download/#repository
+```
+cd ~/catkin_ws/src
+
+git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+
+cd ..
+
+catkin_make
+```
+
+
 --------------
 
 # 2. ROS 네트워크 설정
