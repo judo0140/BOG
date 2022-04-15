@@ -4,7 +4,7 @@
 * BOG/scripts/bog_dynamixel.py -> 라즈베리파이1 의 ~/catkin_ws/src/bog_table/src 폴더로
 * BOG/scripts/bog_guide1.py -> 라즈베리파이1 의 ~/catkin_ws/src/bog_table/src 폴더로
 * BOG/scripts/bog_guide2.py -> 라즈베리파이2 의 ~/catkin_ws/src/bog_table/src 폴더로
-* BOG/scripts/bog_guide3.py -> 라즈베리파이3 의 ~/catkin_ws/src/bog_table/src
+* BOG/scripts/bog_guide3.py -> 라즈베리파이3 의 ~/catkin_ws/src/bog_table/src 폴더로
 
 # 1. 소프트웨어 셋업
 
@@ -65,13 +65,18 @@ nano ~/.bashrc
 
 ![Screenshot from 2022-04-08 15-49-08](https://user-images.githubusercontent.com/61779427/162380194-f8f43f7e-526e-4d51-b5f8-51d39432f2d2.png)
 
-파일 저장 후
+파일 저장 (Ctrl + X-> Y -> Enter) 후
 ```
 source ~/.bashrc
 ``` 
 2) 라즈베리파이 (ROS_HOSTNAME에 각 고정 IP)
 
-터미널(Ctrl + Alt + T) 실행 후
+PC에서 터미널(Ctrl + Alt + T) 실행 후 ssh 원격접속
+```
+ssh pi@192.168.0.x
+```
+이후 해당 터미널에서 ~/.bashrc 파일수정
+
 ```
 nano ~/.bashrc
 ```
@@ -102,31 +107,56 @@ roscore
 ```
 rosrun bog_table bog_master.py
 ```
+
 2) 라즈베리파이1
 
 터미널 창을 2개 실행시켜 노드 2개를 실행시켜야 한다
 
 터미널(Ctrl + Alt + T) 실행 후
 ```
+ssh pi@192.168.0.4
+```
+원격 접속 완료한 터미널에서 노드 실행
+```
 rosrun bog_table bog_guide1.py
 ```
+
 새 터미널(Ctrl + Alt + T) 실행 후
+```
+ssh pi@192.168.0.4
+```
+원격 접속 완료한 터미널에서 노드 실행
 ```
 rosrun bog_table bog_dynamixel.py
 # dynamixel 구동을 위한 노드
 ```
+
 3) 라즈베리파이2
 터미널(Ctrl + Alt + T) 실행 후
 ```
+ssh pi@192.168.0.5
+```
+원격 접속 완료한 터미널에서 노드 실행
+```
 rosrun bog_table bog_guide2.py
 ```
+
 4) 라즈베리파이3
 터미널(Ctrl + Alt + T) 실행 후
+```
+ssh pi@192.168.0.6
+```
+원격 접속 완료한 터미널에서 노드 실행
 ```
 rosrun bog_table bog_guide3.py
 ```
 
 ## 4.2 조작
+
+각 노드 실행시, guide(컵), dynamixel(주전자)의 위치를 묻는다
+
+이에 대한 답은 모든 노드를 실행시킨 후 기입할 것
+(그래야 각 노드끼리 서로의 위치를 공유 가능)
 
 컵, 다이나믹셀 위치 입력 후 실험 시나리오에 맞게 조작
 h : 연장자 우선 컵 제공
@@ -135,4 +165,14 @@ rh : 연장자 컵 우선 수거
 rf : 평등하게 
 
 ![Screenshot from 2022-04-08 18-11-13](https://user-images.githubusercontent.com/61779427/162404612-8f359e8c-8b80-4d11-80ca-3351a890ebfb.png)
+
+컵 조작 예시
+
+ex)
+컵이 d5에 있을 때, d10을 명령하면
+: d5 -> 6 -> ... -> 9 -> d10
+
+컵이 d11에 있을 때, d7을 명령하면
+: d11 -> d10 -> ... -> d7 
+
 
