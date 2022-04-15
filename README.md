@@ -159,9 +159,13 @@ rosrun bog_table bog_guide3.py
 (그래야 각 노드끼리 서로의 위치를 공유 가능)
 
 컵, 다이나믹셀 위치 입력 후 실험 시나리오에 맞게 조작
+
 h : 연장자 우선 컵 제공
+
 f : 평등하게 컵 제공
+
 rh : 연장자 컵 우선 수거
+
 rf : 평등하게 
 
 ![Screenshot from 2022-04-08 18-11-13](https://user-images.githubusercontent.com/61779427/162404612-8f359e8c-8b80-4d11-80ca-3351a890ebfb.png)
