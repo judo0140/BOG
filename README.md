@@ -89,7 +89,17 @@ nano ~/.bashrc
 source ~/.bashrc
 ```
 --------------
-# 3. 하드웨어 셋업
+# 3. 하드웨어 관련
+## 3.1 컵, 주전자 구동부
+
+리니어 가이드 : http://scipia.com/product/%EA%B3%A0%EC%86%8D-300mm-%EC%99%95%EB%B3%B5-%EB%A6%AC%EB%8B%88%EC%96%B4%EB%A0%88%EC%9D%BC-%EB%B2%A8%ED%8A%B8-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-cnc/957/category/153/display/1/
+
+볼롤러 : 한국미스미 볼롤러 BCHAJ7.5 모델
+
+네오디움 자석 : https://www.devicemart.co.kr/goods/search?keyword_log_flag=Y&start_price=&end_price=&search_text=%EB%84%A4%EC%98%A4%EB%94%94%EC%9B%80+%EB%A7%81
+
+라즈베리파이 & 5V/3A 충전기 : https://www.devicemart.co.kr/goods/view?no=1377518 / https://www.devicemart.co.kr/goods/view?no=12234996
+
 --------------
 # 4. 실행
 ## 4.1 ROS 및 노드 실행
